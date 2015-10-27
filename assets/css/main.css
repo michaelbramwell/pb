@@ -1,0 +1,96 @@
+
+
+body {
+  background-color: #000;
+  background-repeat: repeat;
+} 
+
+.bg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url('/assets/img/pattern1.jpg');
+  background-repeat: no-repeat;
+  background-position: center 30%;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #8a8279;
+  border-bottom: 1px solid #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+a, a:hover {
+  color: #8a8279;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px; 
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.nav-pills > li > a {
+  color: #1a3e2d;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+  color: #ffffff;
+  background-color: rgba(138, 130, 121, 0.6);
+}
+
+.muted {
+  color: #ffffff;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  margin: 40px 0 0 0;
+  text-align: left;
+}
+.jumbotron h1 {
+  font-size: 60px;
+  line-height: 1;
+  color: #ffffff;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.jumbotron p.lead {
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+.jumbotron p {
+  clear: both;
+}
+
+.jumbotron ul {
+  float:left;
+  width:45%;
+}
+
+.jumbotron li {
+  color: #ffffff;
+}
+
+.footer {
+  color: #ffffff;
+}
+
+#map_canvas { height: 300px; height: 300px; }

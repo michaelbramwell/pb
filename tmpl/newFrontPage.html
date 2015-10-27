@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{.PageTitleValue}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{.PageMetaDescrValue}}">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="google-site-verification" content="5sS6LHAKivJAcToAcy8-K_2-nT1vsEb2k-KinNxhUrQ" />
+    <link rel="author" href=“https://plus.google.com/102280584181640036572 />
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38810749-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  </head>
+  <body>
+    <div class="bg"> 
+      <div class="container-narrow" itemscope itemtype="http://data-vocabulary.org/Organization">
+
+        <div class="masthead">
+          <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="tel://0439432224" onclick="_gaq.push(['_trackEvent', 'Conversion', 'Menu', 'Phone', , true]);">Call 0439 432 224</a></li>
+            <li class="active"><a href="mailto:paula.bramwell@subiacopsychology.com.au" onclick="_gaq.push(['_trackEvent', 'Conversion', 'Menu', 'Email', , true]);">Email</a></li>
+            <li class="active"><a href="http://au.linkedin.com/pub/paula-bramwell/65/900/910/" onclick="_gaq.push(['_trackEvent', 'Conversion', 'Menu', 'LinkedIn', , true]);">LinkedIn</a></li>
+            <li class="active"><a href="https://plus.google.com/b/102280584181640036572/102280584181640036572/posts" onclick="_gaq.push(['_trackEvent', 'Conversion', 'Menu', 'G+', , true]);">G+</a></li>
+          </ul>
+          <h3 class="muted"><span itemprop="name">{{.PageHeaderValue}}</span></h3>
+        </div>
+        <hr>
+        <div class="jumbotron">
+          {{.PageBodyStr}}
+          <div id="map_canvas"></div>
+        </div>
+        <hr>
+        <div class="footer">
+          <p>{{.PageFooterValue}}</p>
+        </div>
+    </div> <!-- /container -->
+  </div>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.0.js"></script>
+      <script src="../assets/js/bootstrap.js"></script>
+      <script type="text/javascript" src="../assets/js/main.js"></script>
+
+  </body>
+</html>

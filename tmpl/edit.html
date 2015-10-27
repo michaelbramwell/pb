@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Subiaco Psychology - Edit Screen</title>
+    <link rel="stylesheet" href="/assets/css/ckeditor.css">
+
+    <!-- Fav and touch icons -->
+  </head>
+  <body>
+      <form data-bind="submit: editSubmit" method="post">
+        <input type="hidden" data-bind="value: key" />
+        <div>
+          <div data-bind="visible:showSuccess" style="display:none;">Saved!</div>
+          <div data-bind="visible:showFail" style="display:none;">Error Error - does not compute! 0 / zero exception malfunction!!!!Contact your friendly husband for technical assistance!</div>
+
+          <label style="vertical-align:top;">Page Name <br /><input data-bind="value: pageTitleName" style="width:300px;" /></label>
+
+          <label style="vertical-align:top;">Page Title <br /><textarea data-bind="value: pageTitleValue" style="width:300px;height:100px;"></textarea></label>
+
+          <br />
+          <label style="vertical-align:top;">Page Meta Description <br /><textarea data-bind="value: pageMetaDescrValue" style="width:300px;height:100px;"></textarea></label>
+
+          <br />
+          <label style="vertical-align:top;">Header <br /><textarea data-bind="value: pageHeaderValue" style="width:300px;height:100px;"></textarea></label>
+
+          <br />
+          <label style="vertical-align:top;">Body 
+
+          <textarea id="editor1" name="editor1" class="ckeditor" cols="80" rows="10" data-bind="value: pageBodyValue" style="width:300px;height:100px;"></textarea></label>
+
+          <br />
+          <label style="vertical-align:top;">Footer <br /><textarea data-bind="value: pageFooterValue" style="width:300px;height:100px;"></textarea></label>
+          <br />
+
+          <input type="submit" style="vertical-align:top;" value="Go" />
+        </div>
+      </form>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.0.js"></script>
+      <script src="/assets/js/ckeditor.js"></script>     
+      <script type="text/javascript" src="/assets/js/edit.js"></script>
+      
+      <script type="text/javascript">
+        $(function() { 
+          ko.applyBindings(new viewModel('{{.PageNameValue}}', '{{.PageTitleValue}}', '{{.PageMetaDescrValue}}', '{{.PageHeaderValue}}', '{{.PageBodyStr}}', '{{.PageFooterValue}}', '{{.Key}}'));
+        });
+      </script>
+  </body>
+</html>
